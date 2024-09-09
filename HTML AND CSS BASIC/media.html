@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: aqua;
+            color: white;
+            font-weight: bold;
+            display: none; /*To make all content hide
+            so that we can easily use @media function*/
+        }
+
+        /* We write only screen to just telling VS 
+        Code that we are using this type of media only */
+
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block; /*Show 1st box content for screen 
+                that have max-width 300px or less than it*/
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:600px){
+            #box2{
+                display: block; /*Show 1st box content for screen 
+                that have max-width 600px and min-width 300px*/
+                background-color: chocolate;
+            }
+        }
+
+        @media only screen and (min-width:600px) and (max-width:900px){
+            #box3{
+                display: block; /*Show 1st box content for screen 
+                that have max-width 900px and min-width 600px*/
+                background-color: deeppink;
+            }
+        }
+ 
+        @media only screen and (min-width:900px) and (max-width:1200px){
+            #box4{
+                display: block; /*Show 1st box content for screen 
+                that have max-width 1200px and min-width 900px*/
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mein ek Computer hoon</div>
+    <div class="box" id="box2">Mein ek Tablet hoon</div>
+    <div class="box" id="box3">Mein ek Android phone hoon</div>
+    <div class="box" id="box4">Mein ek IPhone hoon</div>
+</body>
+</html>

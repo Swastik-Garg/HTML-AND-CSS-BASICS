@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO SELECTORS AND MORE DESIGNING</title>
+    <style>
+        .container {
+            border: 5px solid red;
+            background-color: aqua;
+            padding: 34px;
+            margin: 34px auto;
+            width: 660px;
+        }
+
+        .btn {
+            background: cornsilk;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            /*WHEM WE PUT OUR MOUSE IN BUTTON OR LINK IT SHOWS US POINTER IN BOTH*/
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+rgb(87, 210, 30)
+        /* HOVER PROPERTY IS USEFUL FOR LINKS AND BUTTONS */
+        a:hover {
+            color: red;
+            background-color: chocolate;
+        }
+
+        .btn:hover {
+            /*THIS SELECTOR IS OVERWRITING THE PROPERTIES OF A:HOVER AS BTN CLASS IS DEFINED IN BOTH A AND BUTTON*/
+            color: red;
+            background-color: yellow;
+            border: 3px solid black;
+        }
+
+        /* VISITED PROPERTY TELLS US WHEN WE CLICK ON LINK AND 
+        COME BACK ON OUR PAGE THEN SOME PROPERTY OF THAT LINK CHANGES */
+        a:visited {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="first">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, suscipit temporibus! Ab, facere,
+            consectetur, in nesciunt illum saepe quasi dicta quos explicabo voluptatem excepturi provident vel ducimus
+            eaque tenetur modi? Corrupti facilis velit facere!</h1>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

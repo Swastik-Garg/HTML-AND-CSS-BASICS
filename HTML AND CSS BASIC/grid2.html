@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:  /* Using below defined gridareas*/
+            'navbar navbar navbar navbar' /* This tells us that navbar takes 4fr*/
+            'section section section aside'
+            'footer footer footer footer'; /* This tells us that section takes 3fr and aside takes 1fr*/
+        }
+        .item{
+            background-color: yellow;
+            border: 4px solid black;
+        }
+
+        #navbar{
+            grid-area: navbar; /* Defines a grid area that we use in container stylepart */
+        }
+
+        #section{
+            grid-area: section; /* Defines a grid area that we use in container stylepart */
+        }
+
+        #aside{
+            grid-area: aside; /* Defines a grid area that we use in container stylepart */
+        }
+        #footer{
+            grid-area: footer; /* Defines a grid area that we use in container stylepart */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+           Home About Contact Follow
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas qui ullam, voluptates voluptate reprehenderit labore nam iure repellendus nihil rem quaerat id vero tenetur obcaecati eligendi aperiam placeat cum officia eaque! Hic, autem ea suscipit dolore cupiditate quae, repellat ipsam accusantium provident reprehenderit iusto dolores quasi voluptas itaque fugit explicabo, nostrum veritatis dignissimos velit? Quod reprehenderit et necessitatibus. Ad maiores nostrum, voluptate quisquam praesentium sapiente excepturi id et. Eaque, deleniti velit? Sint, quo at ipsam dolorem sequi ex obcaecati deleniti nam iure itaque alias quisquam perferendis debitis neque soluta facere modi labore harum. Et quod atque quia eum nisi.
+        </div>
+        <div id="section" class="item">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iusto libero aliquid commodi assumenda? Dicta ratione dolorem, magnam, officiis minus similique veniam corrupti id rerum aperiam aliquam magni vel. Alias, neque id. Voluptatum nihil eaque sit placeat vero adipisci corporis, velit minima sunt amet corrupti modi saepe fugiat eligendi, sequi in voluptate harum a? Eum repudiandae ab amet temporibus autem, tempora fugiat blanditiis atque laboriosam doloribus quisquam, hic nulla labore explicabo aspernatur consectetur culpa adipisci iste. Neque reprehenderit, repudiandae autem debitis voluptatem earum adipisci eaque, corporis sint molestiae aut! Soluta nulla optio pariatur architecto cupiditate, sint nesciunt dolores ratione consequatur assumenda eveniet ioluptatibus perspiciatis unde incidunt ab quisquam sunt explicabo provident id in, illum porro ducimus facilis quaerat earum! Minus cum illo unde, ex in reiciendis labore earum deserunt? Explicabo deleniti aperiam officia error dicta. Eos assumenda, dolorem quisquam architecto est ad molestiae necessitatibus dolore saepe repellendus laboriosam quia sapiente autem id officiis. Consequatur, in dolore? Voluptatem magnam eius voluptates minima ratione soluta sed dolores illo. Praesentium, ratione. Distinctio rem eligendi facere consequatur non. Minus recusandae, asperiores autem officia distinctio accusantium fugiat. Harum accusantium officiis libero ut, consequuntur nam optio! Iure, harum dicta laudantium nesciunt quae ex, nisi optio earum animi illo quis, dolorum ipsam culpa aut at exercitationem? Incidunt omnis voluptatibus odit architecto blanditiis modi deserunt dolore sunt, aperiam, molestiae consequatur veritatis? Reprehenderit expedita fuga, non esse rerum distinctio, libero deleniti, atque fugiat earum quaerat consequatur perferendis amet asperiores nostrum similique dolor quas ea aliquam. Quisquam eveniet impedit eum voluptates esse. Facilis, quae ipsa consequatur quo quis maiores nesciunt velit exercitationem vel nulla hic autem, accusantium dignissimos! Eaque dolorum recusandae facilis saepe nisi laboriosam, nulla numquam, sed, voluptatibus magnam officia cumque necessitatibus aperiam animi. Harum minima iusto veniam.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia asperiores incidunt iusto nisi voluptates dignissimos, itaque laboriosam aliquam vero repellat commodi neque et cum dolores reprehenderit veniam ipsam impedit delectus porro, necessiam maxime optio illo sed vitae doloribus quis, voluptate nam? Voluptates modi id ipsum. Obcaecati soluta fuga velit voluptas veritatis in dicta fugit quaerat? Vel quos reprehenderit, pariatur laborum qui ipsum quidem modi sunt velit vitae nihil impedit voluptatem numquam sequi corporis blanditiis nesciunt. Minus voluptatum excepturi fuga error doloribus eos facere iusto architecto minima reiciendis at sed quam deserunt dolor asperiores officia eaque, nulla similique non, magnam illum laboriosam quidem. Nihil labore, sint quod ipsam laboriosam et beatae saepe asperiores repudiandae ipsum hic earum veniam magni ullam, ut incidunt. Repellendus enim doloribus itaque rem iure doloremque, ipsum aut eos, sint voluptates cum facere laborum incidunt obcaecati illum saepe repellat dolorum quae non quaerat nesciunt veritatis ipsam a eaque? Consequatur nostrum voluptate, nihil culpa nam aperiam, atque ducimus harum libero at voluptates ullam sed enim excepturi pariatur hic mollitia saepe ratione, sunt animi. Similique itaque blanditiis modi quam in incidunt necessitatibus provident optio possimus officiis molestiae, minima eaque ipsa architecto reprehenderit consectetur est aliquid quis veritatis, magni quod natus. Facere repudiandae, totam recusandae nihil voluptates, porro temporibus laboriosam autem alias harum reiciendis. Ullam, soluta. Iusto, fuga. Praesentium ipsum sit commodi et rerum tempore, vitae deserunt sint exercitationem atque assumenda similique nesciunt a odit soluta laudantium cupiditate doloremque eaque. Autem aliquid officiis magnam recusandae atque, quam accusantium sapiente, in cumque sed porro perferendis voluptas, nobis necessitatibus ab tempore est neque voluptatum at nemo. Libero, rerum, vel expedita nihil esse praesentium odio voluptas corporis repudiandae assumenda cum mollitia temporibus quo explicabo deserunt possimus, sed totam! Dicta sit quidem maxime voluptas maiores eaque repudiandae perspiciatis aliquid, ad magnam ab nisi quasi excepturi laudantium cupiditate impedit velit fugiat, quas et minus sapiente. Explicabo laborum perspiciatis magni quo. Facere earum fugiat praesentium in eos officia molestiae optio fuga! Totam rem veritatis tempore nihil provident quidem eligendi nemo a consequuntur incidunt maiores voluptatibus omnis ex ipsum, fugiat qui cumque aliquid doloremque iure sequi nam quisquam ab. Magnam cupiditate deleniti delectus, omnis iusto similique ab, odit ea autem iste in commodi.
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta explicabo accusantium consequatur asperiores? Nisi dignissimos ipsum animi minus quas fuga natus odio nemo nam nesciunt soluta vero, quam rerum autem enim. Rerum enim, animi minus, aspernatur natus ea quaerat possimus ullam repellendus, cum hic harum corrupti. Veniam iusto repudiandae pariatur omnis quae nemo similique quaerat saepe dolore totam, ratione recusandae laudantium aut voluptatum praesentium ab blanditiis consequuntur, provident illo rerum eveniet rem. Ipsa inventore, minima voluptatum necessitatibus cumque nesciunt molestiae libero omnis modi iusto maxime sunt? Illo veritatis iure numquam veniam. Accusantium fugiat consequatur quo natus in mollitia totam, quasi unde adipisci quia expedita atque ea sed reprehenderit! Sint, veritatis esse, deserunt iste at ipsum minus consequatur, dicta ipsa accusamus fuga unde neque doloremque! Nobis pariatur repudiandae esse dolores dicta dolorum perferendis ut fuga cum blanditiis libero et, rerum aliquid animi modi quasi excepturi a sint quaerat rem? Minus dolor molestias possimus eligendi eaque. Nesciunt dolores dignissimos repellat ratione illum earum eligendi rem beatae quasi provident? Odio reprehenderit alias voluptate quidem quia culpa iure laboriosam ullam, delectus hic enim. Neque temporibus vitae quaerat placeat earum in quod asperiores voluptatibus, rem veritatis cumque necessitatibus architecto perferendis quis beatae. Voluptatibus, cum est.
+        </div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div> -->
+    </div>
+</body>
+</html>

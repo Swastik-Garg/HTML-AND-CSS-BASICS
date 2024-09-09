@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        .container {
+            background-color: pink;
+        }
+
+        .box {
+            /* border: 2px solid black; */
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+            position: relative;
+
+            /* SYNTAX OF ANIMATION */
+            /* animation : animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            /* We can write any name of animation */
+            animation-name: swastik2;
+            /*Time in seconds*/
+            animation-duration: 6s;
+            /* How many times animation could repeat after 2s*/
+            animation-iteration-count: 1;
+            /* How we slow and make fast animation */
+            /* animation-timing-function: ease-in;  Starting is slow and Ending is fast*/
+            /* animation-timing-function: ease-in-out;  Starting is slow, mid of animation is fast and Ending is slow*/
+            /* animation-timing-function: ease-out;  Starting is fast and Ending is slow*/
+
+        }
+
+        /* NOW SYNTAX TO WORK ON ANIMATION */
+        /* @keyframes identifier(name of animation) {
+            from{
+                konsi property kaha se start ho
+            }
+            to{
+                property jo upar di hai kaha par end ho
+            }
+        } */
+
+        @keyframes swastik1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        @keyframes swastik2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

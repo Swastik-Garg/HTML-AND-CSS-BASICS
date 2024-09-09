@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZE UNITS</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .container {
+
+            
+        /* View port - height = vh */
+        /* Vire port - width = vw */
+            /* width: 400px; */
+            width: 100vw; /*It takes full width of view*/
+            /* height: 500px; */
+            height: 100vh; /*It takes full height of view*/
+            border: 2px solid red; /* To see that vh and vw works or not*/
+            font-size: 10px;  /*PARENT SIZE*/
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em; /*It means that first heading 
+            will take 10 times more size than parent size i.e 100px*/
+            padding: 3em; /*It will do 30*3 = 90 (font-size X padding)*/
+        }
+
+        #second {
+            font-size: 3rem; /*It resizes itself relative 
+            to the font size of html root element i.e 3*25*/
+            padding: 2rem; /*It follows same rule as followed by font-size*/
+        }
+
+        #third{
+            font-size: 2rem;
+            padding: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is my first heading</h1>
+        <h1 id="second">This is my second heading</h1>
+        <h1 id="third">This is my third heading</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGNMENT</title>
+    <link href="https://fonts.google.com/css?family=Ubuntu&display=swap">
+    <style>
+        body{
+            background-color: grey;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            width: 900px;
+            border : 10px solid pink;
+            /* IN IT MARGIN AUTO MEANS IT TAKES EQUAL SPACE
+            FROM LEFT AND RIGHT AND PLACE ELEMENT AT CENTER */
+            margin: auto;
+            height: 325px;
+        }
+        .item{
+            border: 5px solid yellow;
+            padding: 20px 10px;
+            margin: 12px 15px;
+            background-color: aqua;
+        }
+        #fruit{
+            /* TO MAKE CONTENT IN LEFT */
+            float: left;
+            width: 200px;
+            height: auto;
+        }
+        #computer{
+            /* TO MAKE CONTENT IN RIGHT */
+            float: right;
+            width: 200px;
+            height: auto;
+        }
+        #cloth{
+            /* I MAKE TO ADJUST IT IN CENTER */
+            width:auto;
+            height: 260px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem minima molestias culpa, eligendi deleniti. Sit, ex a, saepe molestias pariatur itaque nesciunt recusandae inventore assumenda accusantium quis ab voluptatem.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem minima molestias culpa, eligendi deleniti. Sit, ex a, saepe molestias pariatur itaque nesciunt recusandae inventore assumenda accusantium quis ab voluptatem.</p>
+        </div>
+        <div id="cloth" class="item">
+            <h3>Cloths</h3>
+            <p id="clothspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem minima molestias culpa, eligendi deleniti. Sit, ex a, saepe molestias pariatur itaque nesciunt recusandae inventore assumenda accusantium quis ab voluptatem.</p>
+        </div>
+    </div>
+</body>
+</html>

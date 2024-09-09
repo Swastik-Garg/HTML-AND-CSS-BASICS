@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FORMS MAKING</title>
+</head>
+
+<body>
+    <h2> THIS OUR FORM</h2>
+    <h5> PLEASE FILL</h5>
+
+    <!-- MAKING FORM  -->
+    <!-- HERE ACTION VAULE IS BACKEND VALUE WHERE 
+     WE ARE STORING THE INFORMATION OF USERS -->
+
+
+    <form action="backend.php">
+        <div>
+            Name : <input type="text"> <!-- HERE INPUT TAG IS USE TO GET INPUT FROM USER  -->
+        </div>
+        <br>
+        <div>
+            Class : <input type="text" name="myclass">
+        </div>
+        <br> <!--   HERE INSIDE INPUT NAME ATTRIBUTE TELS  US THAT ROLL NO 
+                             ENTERED BY USER IS STORED IN BACKEND AS MYCLASS AND MYROLL TEXT    -->
+        <div>
+            Roll No. : <input type="text" name="myroll">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email"> <!--HOW WE ENTER EMAIL ID -->
+        </div>
+        <br>
+        <div>
+            DOB : <input type="date"> <!--  WE ENTER DATE -->
+        </div>
+        <br>
+        <div> <!-- IF USER WANT TO INPUT ABOUT ITSELF-->
+            Write about yourself <textarea name="myarea" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="mycheck"> <!-- HOW WE USE CHECKBOX -->
+        </div>
+        <br>
+        <div> <!-- HOWE WE USE RADIO BUTTON -->
+            MALE <input type="radio" name="mygender"> FEMALE <input type="radio" name="mygender">
+        </div>
+        <br>
+        <input type="submit"><input type="reset">
+    </form>
+
+
+</body>
+
+</html>

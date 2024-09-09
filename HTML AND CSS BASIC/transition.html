@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        #box {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Te;ling VS code to apply transition on which CSS property */
+            /* THE SYNTAX OF TRANSITION IS SIMILAR AS THAT OF ANIMATION */
+            transition-property: background-color;
+            transition-duration: 1s;
+            /* transition-timing-function: ease-in-out; */
+            transition-delay: 2s;
+        }
+
+        #box:hover {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is my heading</h3>
+    <div id="box">
+        This is my box
+    </div>
+</body>
+
+</html>

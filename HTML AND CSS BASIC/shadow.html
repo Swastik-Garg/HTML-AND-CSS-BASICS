@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Box Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 53px 12px;
+            /* border: 3px solid red; */
+            background-color: burlywood;
+
+            /* SYNTAX OF BOX-SHADOW 
+            TO APPLY OUTSIDE THE BOX*/
+
+            /* Here offset means outside the box shadow and 
+            inset means inside the box shadow you want to give */
+            /* box-shadow : offset-x offset-y blur radius(always positive and optional)
+            spread radius(optional and how much shadow will spread) color; */
+
+            /* box-shadow: 10px 13px 13px 20px green;  Jo shadow hogi wo box ke nicche aaegi */
+
+            /* box-shadow: -7px -10px 5px 5px yellow;  Jo shadow hogi wo box ke upar aaegi */
+
+            /* SYNTAX TO APPLY SHADOW INSIDE THE BOX */
+            /* box-shadow : inset inset-x inset-y color; */
+            /* box-shadow: inset 3px 6px green; */
+
+            /*We can give multiple shadows like this*/
+            box-shadow: 5px 7px 10px yellow, 5px 10px 10px red;
+
+        }
+
+
+        /* SYNTAX TO APPLY TEXT SHADOW */
+
+        .card h2{
+            text-shadow: 2px 1px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi minima adipisci labore voluptatibus
+                laudantium, assumenda commodi corrupti, est porro illo? Laudantium minus quisquam cumque quaerat labore
+                quis fuga fugiat, ut, quam perspiciatis soluta!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi minima adipisci labore voluptatibus
+                laudantium, assumenda commodi corrupti, est porro illo? Laudantium minus quisquam cumque quaerat labore
+                quis fuga fugiat, ut, quam perspiciatis soluta!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is CSS Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi minima adipisci labore voluptatibus
+                laudantium, assumenda commodi corrupti, est porro illo? Laudantium minus quisquam cumque quaerat labore
+                quis fuga fugiat, ut, quam perspiciatis soluta!</p>
+        </div>
+    </div>
+</body>
+
+</html>

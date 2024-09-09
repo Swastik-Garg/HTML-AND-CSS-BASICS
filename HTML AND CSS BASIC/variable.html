@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        /* Creating a global variable which means that any part of 
+        this page can use the properties that are under root section */
+
+        :root {
+            --back-color: pink;
+            --border-color: black;
+        }
+
+        .box {
+            /* SYNTAX OF WRITING VARIABLE */
+            /* --variable name : value */
+
+            /* If value is changed in defination of variable 
+            then changes will reflect where variable is used */
+
+            /* Now this declaration of variable inside any particular class 
+            makes it as a local variable means that it only works in .box class not any other */
+            --box-color: red;
+            /* Creating variable of name box-color */
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            border: 3px solid var(--border-color);
+            margin: 22px;
+            box-shadow: 4px 5px 4px 2px var(--box-color); /* Using local variable */
+            /* Uding variable (-- is compulsory in both) */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: var(--back-color); /* Using global variable */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

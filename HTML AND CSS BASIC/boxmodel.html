@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background-color: rgb(29, 229, 35);
+            border: 3px solid rgb(64,6,119);
+            color:yellow;
+            text-align: center;
+            /* WAYS TO GIVE MARGIN/PADDING FOR DIFFERENT DIRECTION 
+            margin/padding-left: 70px;
+            margin/padding-top: 70px;
+            margin/padding-bottom: 70px;
+            margin/padding-right: 70px; */
+
+            /* IF WE WANT TO GIVE MARGIN/PADDING IN ONE LINE THEN 
+            WRTIE padding : top right bottom left */
+            /* margin/padding: 20px 56px 50px 30px; */
+
+            /* ANOTHER WAY TO GIVEMARGIN/PADDING */
+            /* margin/padding : y(top/bottom) x(left/right) */
+            padding: 20px 20px;
+            margin: 34px 50px;
+            border-radius: 23px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id = "first">This is my paragraph</p>
+
+    </div>
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id = "second">This is my second paragraph</p>
+
+    </div>
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id = "third">This is my third paragraph</p>
+
+    </div>
+</body>
+</html>
